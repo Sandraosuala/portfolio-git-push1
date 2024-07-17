@@ -1,0 +1,108 @@
+       body{
+            background-color: brown;
+            color:gold;
+        }
+        p{
+            background-color: black;
+            color:gold;
+        }
+        h3{
+            background-color: black;
+            color:blue;
+        }
+        /* selecting by className */
+        /*
+        involves two steps
+        > add class = 'value' to all the tags you want the css codes to be applied
+        > reference the class value with.value
+
+        example::
+        ><p class = 'p'> text </p>
+        > .p{
+            css rules
+        }
+        */
+
+        .green{
+            padding:1rem;
+            margin:2rem;
+            font-size:0.5rem;
+            line-height:30px;
+            border:1px solid white;
+        }
+        .purple{
+            padding:1rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            background-color: rgb(255, 0, 225);
+        }
+        #blog{
+            font-size: 3rem;
+            margin:2rem;
+            padding:1rem 2rem;
+            text-align: center;
+            border-bottom: 2rem lime solid;
+        }
+        #blog1{
+            font-size: 3rem;
+            margin:2rem;
+            padding:1rem 2rem;
+            text-align: center;
+            border-bottom: 2rem rgb(0, 191, 255) solid;
+        }
+       
+
+
+        /*
+        use media attributes to show
+        > red background on desktop
+        > yellow bg on tablet
+        > green bg on moblie
+        */
+        /*
+        min-width:moblie> tablet > desktop or mobile first approach
+        max-width:desktop> tablet>moblie or desktop first approach
+        breakpoint : is the device width at which you @media start taking effect
+        min-width:300px start taking effect from 300px and above until the next breakpoint
+        max-width 300px start taking effect from 300px and below until the next breakpoint
+        */
+        @media screen and (min-width:300px){
+            body{
+                background-color: red;
+                color: white;
+            }
+        }
+        @media screen and (min-width:600px){
+            body{
+                background-color: rgb(234, 255, 0);
+                color: blue;
+            }
+        }
+        @media screen and (min-width:600px){
+            body{
+                background-color: rgb(51, 255, 0);
+                color: white;
+            }
+        }
+        @media screen and (min-width:600px){
+           .yellow{
+                background-color: rgb(255, 0, 157);
+                color: orange;
+            }
+        }
+        body{
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        
+        
+
+        
+

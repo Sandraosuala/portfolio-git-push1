@@ -1,0 +1,77 @@
+* {
+    /* border: 1px solid red;
+    padding: 10px;
+    margin: 10px; */
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box; 
+}
+h1{
+    text-align: center;
+    width: 50%;
+    font-size: 3rem;
+    margin: 2rem auto;
+    border: 50px solid blue;
+}
+/*Attribute selector*/
+/* .heading3{
+    color: purple;
+
+} */
+ [class ='heading3']{
+    color: red;
+    text-align: center;
+ }
+ section2 h3,.disc,button{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+ }
+ .orange{
+    padding: unset;
+ }
+ #h6{
+   color: black;
+}
+
+.h6{
+   color: orange;
+   }
+.section3 .h6{
+   color: crimson;
+}
+h6{
+   color: red;
+}
+h6{
+   color: blue;
+}
+.section3 h6{
+   color: crimson;
+}
+
+
+/* using descendant selector to avoid name conflict*/
+.section4 p{
+   color: purple;
+   text-align: right;
+   width: 50%;
+}
+.section5 p{
+   color: white;
+   text-align: left;
+   background-color: black;
+   width: 50%;
+}
+.section4 p::first-letter{
+   color: red;
+   font-size: 5rem;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.section5 p:hover{
+   background-color: white;
+   color:black;
+}
+
+
